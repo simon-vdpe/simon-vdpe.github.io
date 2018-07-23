@@ -1,9 +1,84 @@
+#jumbo {
+    margin-top: 5em;
+}
+
+.scd-part {
+    margin-top: 5em;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+    top: 62%;
+}
+
+.icon-scroll {
+    width: 20px;
+    height: 35px;
+    margin-left: -20px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #60697b;
+    border-radius: 12.5px;
+}
+
+.icon-scroll:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #60697b;
+    margin-left: -3px;
+    top: 8px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(23px);
+        transform: translateY(23px);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(23px);
+        transform: translateY(23px);
+    }
+}
+
 .fire-background {
     background-image: url(../img/background/BackgroundFireGradient.png);
 }
 
 .fire-gradient {
-    background-image: linear-gradient(45deg, #255E7D 0%, #464772 33%, #464772 66%, #F6A850 99%, #F6A850 100%);
+    background-image: linear-gradient(to right, rgb(37, 94, 125) 0%, rgb(49, 126, 160) 18%,
+    rgb(70, 71, 114) 40%, rgb(126, 67, 102) 62%, rgb(231, 104, 90) 81%, rgb(238,
+    107, 85) 90%, rgb(246, 168,
+    80) 100%);
+    background-image: -moz-linear-gradient(to right, rgb(37, 94, 125) 0%, rgb(49,
+    126, 160) 18%, rgb(70, 71, 114) 40%, rgb(126, 67, 102) 62%, rgb(231, 104, 90) 81%,
+    rgb(238, 107, 85) 90%, rgb(246, 168,
+    80) 100%);
+    background-image: -webkit-gradient(linear, to right, left bottom,
+    color-stop(0.000, rgb(37, 94, 125)), color-stop(0.183, rgb(49, 126, 160)),
+    color-stop(0.403, rgb(70, 71, 114)), color-stop(0.621, rgb(126, 67, 102)),
+    color-stop(0.812, rgb(231, 104, 90)), color-stop(0.900, rgb(238, 107, 85)),
+    color-stop(1.000, rgb(246, 168, 80)));
+
 }
 
 .purple-gradient {
@@ -67,7 +142,7 @@
 }
 
 .night-fade-gradient {
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
 }
 
 .spring-warmth-gradient {
